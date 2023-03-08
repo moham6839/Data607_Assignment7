@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+  <book>
+    <Title>People Over Politics: A Nonpartisan Analysis of the Issues that Matter Most</Title>
+    <Authors>
+      <author1>Antony E. Ghee</author1>
+    </Authors>
+    <Pages>222</Pages>
+    <Year_Published>2022</Year_Published>
+    <Current_Price>15.99</Current_Price>
+  </book>
+  <book>
+    <Title>I Think You're Wrong (But I'm Listening)</Title>
+    <Authors>
+      Sarah Stewart Miller, Beth A. Silvers
+    </Authors>
+    <Pages>224</Pages>
+    <Year_Published>2020</Year_Published>
+    <Current_Price>11.63</Current_Price>
+  </book>
+  <book>
+    <Title>How Democracies Die</Title>
+    <Authors>
+      <author1>Steven Levitsky, Daniel Ziblatt</author1>
+    </Authors>
+    <Pages>320</Pages>
+    <Year_Published>2019</Year_Published>
+    <Current_Price>15.39</Current_Price>
+  </book>
+</books>
