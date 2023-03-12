@@ -1,32 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <books>
   <book>
-    <title>People Over Politics: A Nonpartisan Analysis of the Issues that Matter Most</title>
-    <authors>
+    <Title>People Over Politics: A Nonpartisan Analysis of the Issues that Matter Most</Title>
+    <Authors>
       <author1>Antony E. Ghee</author1>
-    </authors>
-    <pages>222</pages>
-    <year_published>2022</year_published>
-    <current_price>15.99</current_price>
+    </Authors>
+    <Pages>222</Pages>
+    <Year_Published>2022</Year_Published>
+    <Current_Price>15.99</Current_Price>
   </book>
   <book>
-    <title>I Think You're Wrong (But I'm Listening)</title>
-    <authors>
-      <author1>Sarah Stewart Miller</author1>
-      <author2>Beth A. Silvers</author2>
-    </authors>
-    <pages>224</pages>
-    <year_published>2020</year_published>
-    <current_price>11.63</current_price>
+    <Title>I Think You're Wrong (But I'm Listening)</Title>
+    <Authors>
+      Sarah Stewart Miller, Beth A. Silvers
+    </Authors>
+    <Pages>224</Pages>
+    <Year_Published>2020</Year_Published>
+    <Current_Price>11.63</Current_Price>
   </book>
   <book>
-    <title>How Democracies Die</title>
-    <authors>
-      <author1>Steven Levitsky</author1>
-      <author2>Daniel Ziblatt</author2>
-    </authors>
-    <pages>320</pages>
-    <year_published>2019</year_published>
-    <current_price>15.39</current_price>
+    <Title>How Democracies Die</Title>
+    <Authors>
+      <author1>Steven Levitsky, Daniel Ziblatt</author1>
+    </Authors>
+    <Pages>320</Pages>
+    <Year_Published>2019</Year_Published>
+    <Current_Price>15.39</Current_Price>
   </book>
 </books>

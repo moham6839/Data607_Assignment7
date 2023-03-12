@@ -1,5 +1,5 @@
 [
-	{"title": "People Over Politics: A Nonpartisan Analysis of the Issues that Matter Most", "authors": [{"author1": "Antony E. Ghee"}], "pages": 222, "year_published": "2022", "current_price": 15.99}, 
-	{"title": "I Think You're Wrong(But I'm Listening)", "authors": [{"author1": "Sarah Stewart Holland", "author2": "Beth A. Silvers"}], "pages": 224, "year_published": "2020", "current_price": 11.63}, 
-	{"title": "How Democracies Die", "authors": [{"author1": "Steven Levitsky", "author2": "Daniel Ziblatt"}], "pages": 320, "year_published": "2019", "current_price": 15.39}
+	{"Title": "People Over Politics: A Nonpartisan Analysis of the Issues that Matter Most", "authors": [{"Author1": "Antony E. Ghee"}], "Pages": 222, "Year_Published": "2022", "Current_Price": 15.99}, 
+	{"Title": "I Think You're Wrong (But I'm Listening)", "authors": [{"Author1": "Sarah Stewart Holland", "Author2": "Beth A. Silvers"}], "Pages": 224, "Year_Published": "2020", "Current_Price": 11.63}, 
+	{"Title": "How Democracies Die", "authors": [{"Author1": "Steven Levitsky", "Author2": "Daniel Ziblatt"}], "Pages": 320, "Year_Published": "2019", "Current_Price": 15.39}
 ]
