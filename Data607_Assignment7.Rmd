@@ -1,0 +1,63 @@
+---
+title: "Data 607 Assignment 7"
+author: "Mohamed Hassan-El Serafi"
+date: "2023-03-12"
+output: html_document
+---
+
+The three books I selected were all politically-themed, focusing on the number of pages, the year each book was published, and the current price of each book. Two of the books had multiple authors. I used html, xml, and json as separate file types  to input the information for each book and create tables you will see below. I will explain further the similarities and differences of each file type.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, warnings=FALSE)
+```
+
+
+```{r}
+library(tidyverse)
+library(RCurl)
+library(xml2)
+library(XML)
+library(htmltools)
+library(rjson)
+library(data.table)
+```
+
+
+
+## Loading HTML File
+
+
+```{r}
+html_raw <- 'https://raw.githubusercontent.com/moham6839/Data607_Assignment7/main/Data607_Assignment7_books.html'
+html_download <- RCurl::getURL(html_raw)
+html_df <- XML::readHTMLTable(html_download,header=TRUE,as.data.frame=TRUE)
+knitr:: kable(html_df, "pipe", align=c("l", "c", "c"))
+```
+
+
+## Loading XML File
+
+```{r}
+xml_raw <- 'https://raw.githubusercontent.com/moham6839/Data607_Assignment7/main/Data607_Assignment7_books.xml'
+xmldata_pull <- RCurl::getURL(xml_raw)
+xml_input <- XML::xmlParse(xmldata_pull)
+xml_df <- XML::xmlToDataFrame(xmldata_pull)
+knitr:: kable(xml_df, "pipe", align=c("l", "c", "c"))
+```
+
+
+
+
+
+## Loading JSON File
+
+
+```{r}
+json_raw <- 'https://raw.githubusercontent.com/moham6839/Data607_Assignment7/main/Data607_Assignment7_books.json'
+json_download <- RCurl::getURL(json_raw)
+json_df <- jsonlite::fromJSON(json_download)
+json_df2 <- tidyr::unnest(json_df,col=authors)
+knitr:: kable(json_df2, "pipe", align=c("l", "c", "c"))
+```
+
+The html and xml files are formatted vertically, while the json file is formatted horizontally. The tables that were created using html and xml files are identical, while the table that was created using a json file was different. For the json file, two separate columns were created for each book that had two authors, while there is only one column for the authors in the html and xml files. 
